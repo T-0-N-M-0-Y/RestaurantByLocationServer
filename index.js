@@ -25,7 +25,7 @@ async function run() {
         // Connect the client to the server	(optional starting in v4.7)
         client.connect();
 
-        const restaurantsCollection = client.db('resturants').collection('resturants_info');
+        const restaurantsCollection = client.db('restaurants').collection('restaurants_info');
 
         app.get("/state", async (req, res) => {
             const pipeline = [
